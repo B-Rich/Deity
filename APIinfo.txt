@@ -1,0 +1,108 @@
+ACTIVITY FEED
+-------------
+GET /feed
+
+COMMENTS (POST/DELETE scope: comment)
+--------
+POST /comments*
+DELETE /comments/:id*
+GET /comments
+
+FOLLOWS
+-------
+POST /follows*
+DELETE /follows*
+GET /follows/relationship
+GET /follows/batch - not implemented
+GET /users/:id/followers
+GET /users/:id/followers/ids
+GET /users/:id/following
+GET /users/:id/following/ids
+GET /startups/:id/followers
+GET /startups/:id/followers/ids
+
+INTROS
+------
+POST /intros*
+
+JOBS
+----
+GET /jobs
+GET /jobs/:id
+GET /startups/:startup_id/jobs
+GET /tags/:tag_id/jobs
+
+LIKES (POST/DELETE scope: comment)
+-----
+POST /likes*
+DELETE /likes/:id*
+GET /likes
+
+MESSAGES (scope: message)
+--------
+GET /messages*
+GET /messages/:thread_id*
+POST /messages*
+POST /messages/mark*
+
+PATHS
+-----
+GET /paths* - not implemented
+
+PRESS
+-----
+GET /press
+GET /press/:id
+
+RESERVATIONS (scope: invest)
+------------
+GET /reservations*
+GET /reservations/:startup_id*
+POST /reservations*
+PUT /reservations/:id*
+DELETE /reservations/:id*
+
+REVIEWS
+-------
+GET /reviews
+GET /reviews/:id
+
+SEARCH
+------
+GET /search
+GET /search/slugs
+
+STARTUPS
+--------
+GET /startups/:id
+GET /startups/:id/comments
+GET /startups/:id/roles
+GET /startups?filter=raising
+GET /tags/:id/startups
+
+STARTUP ROLES
+-------------
+GET /startup_roles?v=1
+
+STATUS UPDATES
+--------------
+POST /status_updates*
+DELETE /status_updates/:id*
+GET /status_updates
+
+TAGS
+----
+GET /tags/:id
+GET /tags/:id/children
+GET /tags/:id/parents
+GET /tags/:id/startups
+GET /tags/:id/users
+
+USERS
+-----
+GET /me*
+GET /users/:id
+GET /users/:id/roles
+GET /users/batch
+GET /users/search
+GET /tags/:id/users
