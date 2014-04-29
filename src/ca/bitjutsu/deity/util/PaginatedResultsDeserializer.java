@@ -4,6 +4,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 import ca.bitjutsu.deity.DeepCloneable;
+import ca.bitjutsu.deity.Deity;
 import ca.bitjutsu.deity.impl.ActivityFeedItemImpl;
 import ca.bitjutsu.deity.impl.PaginatedResults;
 
@@ -34,7 +35,7 @@ public class PaginatedResultsDeserializer<E extends DeepCloneable>
 		JsonArray data = obj.get(mItemName).getAsJsonArray();
 		obj.remove(mItemName);
 		
-		Gson gson = new Gson();
+		Gson gson = Deity.getGson();
 		Type typeOfElements = new TypeToken<ArrayList<ActivityFeedItemImpl>>(){}.getType();
 		ArrayList<ActivityFeedItemImpl> elements = gson.fromJson(data, typeOfElements);
 		System.out.println(elements.get(0));

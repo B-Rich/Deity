@@ -2,6 +2,7 @@ package ca.bitjutsu.deity.auth;
 
 import java.util.ArrayList;
 
+import ca.bitjutsu.deity.Deity;
 import ca.bitjutsu.deity.util.HttpRequest;
 import ca.bitjutsu.deity.util.HttpRequest.HttpRequestCompletedListener;
 
@@ -45,8 +46,8 @@ public class Auth {
 		new HttpRequest("POST", url, new HttpRequestCompletedListener() {
 			@Override
 			public void onCompleted(String data) {
-				Gson gson = new Gson();
-				AccessToken token = gson.fromJson(data, AccessToken.class);
+				Gson gson = Deity.getGson();
+                AccessToken token = gson.fromJson(data, AccessToken.class);
 				
 				notifyListeners(token);
 			}
