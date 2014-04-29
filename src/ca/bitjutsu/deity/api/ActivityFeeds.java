@@ -2,7 +2,7 @@ package ca.bitjutsu.deity.api;
 
 import java.util.Iterator;
 
-import ca.bitjutsu.deity.entities.ActivityFeedItem;
+import ca.bitjutsu.deity.entity.ActivityFeedItem;
 
 public interface ActivityFeeds {
 	/**

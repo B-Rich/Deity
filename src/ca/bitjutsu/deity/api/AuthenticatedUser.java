@@ -4,21 +4,21 @@ import java.util.Iterator;
 import java.util.List;
 
 import ca.bitjutsu.deity.ScopeRequiredException;
-import ca.bitjutsu.deity.entities.ActivityFeedItem;
-import ca.bitjutsu.deity.entities.Comment;
-import ca.bitjutsu.deity.entities.Follow;
-import ca.bitjutsu.deity.entities.Followable;
-import ca.bitjutsu.deity.entities.Intro;
-import ca.bitjutsu.deity.entities.Like;
-import ca.bitjutsu.deity.entities.Message;
-import ca.bitjutsu.deity.entities.MessageThread;
-import ca.bitjutsu.deity.entities.Press;
-import ca.bitjutsu.deity.entities.Reservation;
-import ca.bitjutsu.deity.entities.Review;
-import ca.bitjutsu.deity.entities.Startup;
-import ca.bitjutsu.deity.entities.StartupRole;
-import ca.bitjutsu.deity.entities.StatusUpdate;
-import ca.bitjutsu.deity.entities.User;
+import ca.bitjutsu.deity.entity.ActivityFeedItem;
+import ca.bitjutsu.deity.entity.Comment;
+import ca.bitjutsu.deity.entity.Follow;
+import ca.bitjutsu.deity.entity.Followable;
+import ca.bitjutsu.deity.entity.Intro;
+import ca.bitjutsu.deity.entity.Like;
+import ca.bitjutsu.deity.entity.Message;
+import ca.bitjutsu.deity.entity.MessageThread;
+import ca.bitjutsu.deity.entity.Press;
+import ca.bitjutsu.deity.entity.Reservation;
+import ca.bitjutsu.deity.entity.Review;
+import ca.bitjutsu.deity.entity.Startup;
+import ca.bitjutsu.deity.entity.StartupRole;
+import ca.bitjutsu.deity.entity.StatusUpdate;
+import ca.bitjutsu.deity.entity.User;
 
 public interface AuthenticatedUser extends User {
 	/* Activity Feeds API. */

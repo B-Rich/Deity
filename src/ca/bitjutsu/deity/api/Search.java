@@ -2,7 +2,7 @@ package ca.bitjutsu.deity.api;
 
 import java.util.List;
 
-import ca.bitjutsu.deity.entities.SearchResult;
+import ca.bitjutsu.deity.entity.SearchResult;
 
 public interface Search {
 	/* Search API */

@@ -1,4 +1,4 @@
-package ca.bitjutsu.deity.entities;
+package ca.bitjutsu.deity.entity;
 
 import java.util.Iterator;
 import java.util.List;

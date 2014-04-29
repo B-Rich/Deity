@@ -2,7 +2,7 @@ package ca.bitjutsu.deity.api;
 
 import java.util.Iterator;
 
-import ca.bitjutsu.deity.entities.Startup;
+import ca.bitjutsu.deity.entity.Startup;
 
 public interface Startups {
 	/* Startups API */

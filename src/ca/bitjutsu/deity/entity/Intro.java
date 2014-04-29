@@ -1,4 +1,4 @@
-package ca.bitjutsu.deity.entities;
+package ca.bitjutsu.deity.entity;
 
 public interface Intro {
 	public long getId();

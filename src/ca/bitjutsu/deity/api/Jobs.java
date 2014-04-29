@@ -2,7 +2,7 @@ package ca.bitjutsu.deity.api;
 
 import java.util.Iterator;
 
-import ca.bitjutsu.deity.entities.Job;
+import ca.bitjutsu.deity.entity.Job;
 
 public interface Jobs {
 	/* Jobs API */

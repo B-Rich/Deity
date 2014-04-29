@@ -3,9 +3,9 @@ package ca.bitjutsu.deity.impl;
 import java.util.List;
 
 import ca.bitjutsu.deity.DeepCloneable;
-import ca.bitjutsu.deity.entities.ActivityFeedItem;
-import ca.bitjutsu.deity.entities.Followable;
-import ca.bitjutsu.deity.entities.User;
+import ca.bitjutsu.deity.entity.ActivityFeedItem;
+import ca.bitjutsu.deity.entity.Followable;
+import ca.bitjutsu.deity.entity.User;
 
 import com.google.gson.annotations.SerializedName;
 
